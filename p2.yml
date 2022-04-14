@@ -2,10 +2,5 @@
 - name: Pull docker image of Calculator
   hosts: all
   tasks:
-    - name: Start docker service
-      service:
-        name: docker
-        state: started
-
     - name: pull docker image
       shell: docker pull naidu2658/calcdem:v1
